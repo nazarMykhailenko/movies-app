@@ -1,0 +1,27 @@
+.root {
+	display: flex;
+	align-items: center;
+	width: 25rem;
+	background-color: #222222;
+	padding: 0.7rem;
+	border-radius: 10px;
+	overflow: hidden;
+
+	input {
+		padding: 1rem 0.7rem;
+		flex-grow: 1;
+		background-color: transparent;
+		color: #fff;
+		font-family: inherit;
+		border: none;
+		outline: none;
+	}
+
+	.icon {
+		font-size: 1.8rem;
+		color: #ccc;
+		position: relative;
+		z-index: 5;
+		cursor: pointer;
+	}
+}

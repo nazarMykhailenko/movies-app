@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,700,900);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	padding: 3rem;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 300;
+	background-color: #464955;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#root {
+	height: 100%;
+}
+
+.wrapper {
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-radius: 10px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #292929;
+	padding-bottom: 4rem;
+	box-shadow: rgba(17, 17, 26, 0.1) 0rem 0.1rem 0rem,
+		rgba(17, 17, 26, 0.1) 0rem 0.8rem 2.4rem,
+		rgba(17, 17, 26, 0.1) 0rem 1.6rem 4.8rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #525a84;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(170, 170, 170);
+	transition: background 0.3s ease 0s;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(133, 132, 132);
+}
+
+.container {
+	width: 95%;
+	margin: 0px auto;
+	padding: 0 1.5rem;
+	box-sizing: content-box;
+}
+
+.btn {
+	display: inline-block;
+	padding: 1rem 1.7rem;
+	border-radius: 7px;
+	border: none;
+	background-color: #f23e78;
+	color: #fff;
+	font-size: 1.6rem;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	transform: translateY(0);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 24px;
+	text-decoration: none;
+
+	&:hover {
+		background-color: darken(#f23e78, 15%);
+	}
+
+	&:active {
+		transform: translateY(-2px);
+	}
+}
+
+.main {
+	flex-grow: 1;
+}
+
+input:not(:focus, :active)::-webkit-search-cancel-button {
+	display: none;
+}

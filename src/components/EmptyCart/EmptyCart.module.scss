@@ -1,0 +1,18 @@
+.root {
+	text-align: center;
+	color: #ccc;
+
+	img {
+		width: 16.6rem;
+		height: 15.9rem;
+	}
+
+	h1 {
+		font-weight: 300;
+		font-size: 4rem;
+	}
+
+	& > *:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+}

@@ -1,0 +1,31 @@
+.root {
+	height: 100%;
+	color: #ccc;
+
+	.error {
+		font-size: 10rem;
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	p {
+		font-size: 3rem;
+
+		&:not(:last-child) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1.2rem 1.5rem;
+		background-color: #454854;
+		color: #ccc;
+		text-decoration: none;
+		border-radius: 10px;
+	}
+}

@@ -1,0 +1,134 @@
+.header {
+	position: sticky;
+	top: 0;
+	width: 95%;
+	margin: 0px auto;
+	background-color: #292929;
+	z-index: 8;
+
+	.container {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+		column-gap: 3rem;
+
+		h1 {
+			display: inline-block;
+			cursor: pointer;
+			text-decoration: none;
+			color: #ccc;
+			font-size: 4rem;
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+
+		.icon {
+			z-index: 5;
+			display: block;
+			position: relative;
+			width: 3rem;
+			height: 1.8rem;
+			cursor: pointer;
+		}
+
+		.icon span,
+		.icon::after,
+		.icon::before {
+			left: 0;
+			position: absolute;
+			height: 10%;
+			width: 100%;
+			background-color: #ccc;
+			transition: all 0.3s ease 0s;
+		}
+
+		.icon::before,
+		.icon::after {
+			content: '';
+		}
+
+		.icon::after {
+			bottom: 0;
+		}
+
+		.icon::before {
+			top: 0;
+		}
+
+		.icon span {
+			top: 50%;
+			transform: scale(1) translate(0px, -50%);
+		}
+
+		.icon._active span {
+			transform: scale(0);
+		}
+
+		.icon._active:before {
+			top: 50%;
+			transform: translate(0px, -50%) rotate(-45deg);
+		}
+
+		.icon._active::after {
+			bottom: 50%;
+			transform: translate(0px, 50%) rotate(45deg);
+		}
+	}
+
+	.other {
+		display: flex;
+		align-items: center;
+		column-gap: 1.5rem;
+
+		.cartIconBlock {
+			position: relative;
+			margin-right: 1rem;
+
+			.cartTotalCount {
+				position: absolute;
+				top: -0.8rem;
+				right: -0.8rem;
+				width: 1.5rem;
+				height: 1.5rem;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #f23e78;
+				border-radius: 50%;
+				font-size: 1.2rem;
+				color: #fff;
+			}
+		}
+
+		.otherIcon {
+			font-size: 2.6rem;
+			color: #ccc;
+			cursor: pointer;
+		}
+
+		.shortInfo {
+			display: flex;
+			align-items: center;
+			column-gap: 2rem;
+
+			h2 {
+				font-size: 1.6rem;
+				font-weight: 400;
+				color: #ccc;
+			}
+
+			img {
+				width: 4rem;
+				height: 4rem;
+				border-radius: 50%;
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+.root {
+	padding-top: 3rem;
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 2%;
+
+		.description {
+			flex: 0 0 49%;
+			color: #ccc;
+
+			header {
+				display: flex;
+				justify-content: space-between;
+
+				&:not(:last-child) {
+					margin-bottom: 3.5rem;
+				}
+
+				h1 {
+					font-size: 3.2rem;
+					font-weight: 300;
+				}
+			}
+
+			main {
+				display: flex;
+				flex-direction: column;
+
+				.genres {
+					font-size: 1.4rem;
+					font-weight: 300;
+					margin-bottom: 1.5rem;
+				}
+
+				p {
+					font-size: 1.8rem;
+					margin-bottom: 9rem;
+				}
+
+				div {
+					margin-bottom: 1rem;
+				}
+			}
+
+			footer {
+				.buttonBlock {
+					display: flex;
+					align-items: center;
+					column-gap: 2rem;
+					margin-top: 2rem;
+
+					button {
+						display: flex;
+						align-items: center;
+						column-gap: 0.5rem;
+					}
+
+					.count {
+						width: 1.5rem;
+						height: 1.5rem;
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;
+						background-color: #fff;
+						border-radius: 50%;
+						font-size: 1.2rem;
+						color: #f23e78;
+					}
+				}
+			}
+		}
+	}
+}

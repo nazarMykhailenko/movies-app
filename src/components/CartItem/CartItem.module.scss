@@ -1,0 +1,101 @@
+.root {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: #595d6d;
+	padding: 2rem;
+	border-radius: 10px;
+	column-gap: 2%;
+
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+
+	.right {
+		flex: 0 0 49%;
+		display: flex;
+		align-items: center;
+		column-gap: 1rem;
+
+		h1 {
+			color: rgb(190, 190, 190);
+			font-weight: 300;
+		}
+
+		img {
+			height: 10rem;
+			width: 10rem;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+
+	.left {
+		flex: 0 0 49%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.count {
+			display: flex;
+			align-items: center;
+			column-gap: 1.5rem;
+
+			div {
+				color: rgb(190, 190, 190);
+				font-size: 2rem;
+			}
+
+			.btn {
+				width: 3rem;
+				height: 3rem;
+				background-color: transparent;
+				color: #f23e78;
+				border: 1px solid #f23e78;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 1.8rem;
+				cursor: pointer;
+				transform: translateY(0);
+
+				&:hover {
+					background-color: #f23e78;
+					color: #fff;
+				}
+
+				&:active {
+					transform: translateY(-2px);
+				}
+
+				&:disabled {
+					background-color: transparent;
+					color: #fff;
+					border-color: rgb(190, 190, 190);
+					transform: translateY(0);
+				}
+			}
+		}
+
+		.delete {
+			width: 3rem;
+			height: 3rem;
+			background-color: rgb(190, 190, 190);
+			color: #292929;
+			border: none;
+			border-radius: 50%;
+			cursor: pointer;
+			transform: translateY(0);
+
+			&:hover {
+				background-color: rgb(151, 151, 151);
+			}
+
+			&:active {
+				transform: translateY(-2px);
+			}
+		}
+	}
+}
